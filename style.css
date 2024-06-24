@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 740px;  
+    border-bottom: 1px solid rgb(99, 207, 85);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+      
+}
+
+
+.kong {
+    position: absolute;
+    bottom: 0;
+}
+
+.rock {
+    position: absolute;
+    bottom: -25px;
+    width: 265px;
+    animation: rock-animation 1.2s infinite linear;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+    
+}
+
+.birds {
+    position: absolute;
+    width: 300px;
+    animation: birds 5s linear infinite;
+    
+}
+
+
+
+@keyframes rock-animation {
+    from {
+        right: -250px;
+    }
+
+    to {
+        right: 100%;
+    }
+    
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+    45% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 175px;
+    }
+
+    55% {
+        bottom: 170px;
+    }
+
+    60% {
+        bottom: 165px;
+    }
+
+    65% {
+        bottom: 160px;
+    }
+
+    70% {
+        bottom: 155px;
+    }
+    75% {
+        bottom: 150px;
+    }
+
+    80% {
+        bottom: 145px;
+    }
+    85% {
+        bottom: 140px;
+    }
+
+    90% {
+        bottom: 135px;
+    }
+    95% {
+        bottom: 130px;
+    }
+    
+    96% {
+        bottom: 120px;
+    }
+
+    97% {
+        bottom: 100px;
+    }
+
+    98% {
+        bottom: 80px;
+    }
+
+    99% {
+        bottom: 30px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+} 
+
+@keyframes birds {
+    from{
+        right: -400px;
+    }
+
+    to {
+        right: 100%;
+    }
+
+}
+
